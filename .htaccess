@@ -1,0 +1,20 @@
+# General Apache options
+Options +FollowSymLinks
+
+# If you don't want RAGS to look in certain directories,
+# use the following rewrite rules so that Apache won't rewrite certain requests
+# 
+# Example:
+#   RewriteCond %{REQUEST_URI} ^/notrails.*
+#   RewriteRule .* - [L]
+
+#
+# Example:
+#   RewriteRule ^(.*)$ dispatch.fcgi [QSA,L]
+RewriteEngine On
+# RewriteRule ^$ index.html [QSA]
+# RewriteRule ^([^.]+)$ $1.html [QSA]
+RewriteCond %{REQUEST_URI} pub.*
+RewriteRule .* - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ framework/dispatch.php [QSA,L]

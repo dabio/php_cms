@@ -1,0 +1,18 @@
+#header
+{
+	background:url('/pub/i/admin/header_bg.gif') repeat-x silver;
+	border-top:1px solid #e2e2e2;
+	border-bottom:1px solid #404040;
+	color:#3c0000;
+	height:18px;
+	padding:28px 50px;
+}
+
+#spinner
+{
+	background:url('/pub/i/admin/spinner.gif') 50% 50% no-repeat;
+	display:block;
+	height:32px;width:32px;
+	position:absolute;
+	top:23px;right:20px;
+}

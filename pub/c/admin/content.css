@@ -1,0 +1,120 @@
+#content table 
+{
+	font-size:11px;
+    width:100%;
+}
+#content td
+{
+    vertical-align:top;
+}
+
+#content #tree
+{
+	border-right:1px solid #404040;
+	background:#e7edf6;color:#000;
+    padding:20px 0;
+	width:33%;
+}
+
+#content #tree a
+{
+	color:#3c0000;background:#e7edf6;
+	text-decoration:none;
+}
+
+#content #tree li
+{
+	padding:1px 0 1px 16px;
+}
+#content #tree li.plus
+{
+	background:url('/pub/i/admin/toggle_minus.png') 0 1px no-repeat;
+}
+#content #tree ul
+{
+	list-style:none;
+	margin:0;padding:0;
+}
+
+#content #tree span.more
+{
+	visibility:hidden;
+	margin-left:3px;
+}
+#content #tree span.more a
+{
+	padding:0 1px;
+}
+#content #tree div.leaf:hover span.more
+{
+	visibility:visible;
+}
+
+#content #item
+{
+    padding:20px;
+}
+
+#content #item fieldset
+{
+	border:none;
+}
+
+#content #item label
+{
+	display:block;
+    font-weight:bold;
+	margin-top:16px;
+}
+
+#content #item legend
+{
+	font-size:16px;
+	height:16px;
+	margin:0;padding:0;
+}
+
+#content #item input#f_title, #content #item textarea
+{
+	width:100%;
+}
+#content #item textarea
+{
+    height:300px;
+}
+
+#f_markup
+{
+	float:left;
+}
+#f_toolbar
+{
+    margin-top:16px;
+    margin-bottom:-32px;
+    text-align:right;
+}
+#f_toolbar a
+{
+	color:#3c0000;background:#fff;
+	text-decoration:none;
+}
+#f_preview
+{
+    border-top:1px solid #d9d9d9;
+    border-bottom:1px solid #d9d9d9;
+    height:298px;width:100%;
+    margin-bottom:4px;
+    overflow:auto;
+}
+
+form #buttons
+{
+	float:right;
+    margin:0;padding:0;
+}
+
+#buttons input.btn
+{
+    float:right;
+    margin-left:5px;
+}

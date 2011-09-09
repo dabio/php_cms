@@ -1,0 +1,175 @@
+/*****************************************************************************
+*                                                                            *
+* ACHTUNG:  Dieses Stylesheet enthält einige Hacks, damit auch Nutzer des    *
+*           Internet Explorers die Seite korrekt anschauen können.           *
+*                                                                            *
+*****************************************************************************/
+
+body {
+	background:url('/pub/i/body_bg.gif') center repeat-y #e8b36d;color:#1d1d1d;
+	font:75%/150% 'Lucida Grande', Verdana, Arial, sans-serif;
+	margin:0;padding:0;
+	text-align:center;
+}
+
+a {cursor:pointer;text-decoration:none}
+
+img {border:none}
+
+h1, h2, h3, h4, h5, h6
+{
+    font-family: "Gill Sans", "Trebuchet MS", Verdana, sans-serif;
+    font-weight: normal; 
+}
+
+#container {
+	background:url('/pub/i/container_bg.gif') top left repeat-y;
+	margin:0 auto;
+	text-align:left;
+	width:500px;
+}
+
+#header {
+	background:url('/pub/i/header_bg.jpg') top right no-repeat;
+	height:53px;
+	margin:0 15px;
+	padding-top:29px;padding-left:33px;
+}
+
+#main_nav {
+	background:url('/pub/i/main_nav_bg.png') repeat-x;
+	height:27px;
+	margin:0 15px;
+}
+#main_nav ul {margin:0;padding:0;list-style:none}
+#main_nav li {float:left;margin:0;padding:0;}
+#main_nav a {
+	background:url('/pub/i/navi_divider.gif') right #888;color:#fff;
+	display:block;
+	height:15px;
+    float:left;
+	padding:4px 20px !important;    /* for good Browsers */
+    padding:2px 20px;               /* for IE */
+	text-decoration:none;
+	text-shadow:2px 2px 1px #000;   /* for Safari Users (CSS 3) */
+}
+#main_nav a.active {font-weight:bold}
+
+#local_nav {
+    background-image:url('/pub/i/local_nav_bg.gif') !important;
+    background-image:none;
+    background-repeat:repeat-x;
+    background-color:#ebebeb;
+    color:#004763;
+	border-bottom:1px solid #d9d9d9;
+    margin:-2px 15px 0 15px;
+}
+#local_nav ul {margin:0;padding:0;list-style:none;}
+#local_nav li {background:#ebebeb;color:#004763;float:left;margin-top:2px;padding:0 10px;}
+#local_nav a
+{
+    background:#ebebeb;color:#004763;
+    border-bottom: 1px solid #d9d9d9;
+	display:block;
+	margin-top:5px;
+	margin-bottom:-1px;
+	padding:3px 11px 2px 11px;
+	text-decoration:none;
+}
+#local_nav a:hover {
+    background:#fff;color:#004763;border-bottom:1px solid #fff;
+    border-left:1px solid #d9d9d9;
+    border-right:1px solid #d9d9d9;
+    border-top:1px solid #d9d9d9;
+    padding:2px 10px;
+
+}
+#local_nav a.active
+{
+    background:#fff;color:#004763;
+	border-bottom: 1px solid #fff;
+    border-left:1px solid #d9d9d9;
+    border-right:1px solid #d9d9d9;
+    border-top:1px solid #d9d9d9;
+    padding:2px 10px;
+    font-weight:bold;
+}
+
+#content li {
+	background:url('/pub/i/bullet_orange.gif') no-repeat 0 50%;
+    list-style:none;
+    margin-left:-30px;
+    padding-left:18px;
+}
+#content li.vcard, #content li.email {
+    padding-left:25px;
+}
+#content li.vcard {
+	background-image:url('/pub/i/vcard.gif');
+}
+#content li.email {
+	background-image:url('/pub/i/email.gif');
+}
+#content p {
+	margin:0 0 1px;
+	padding:5px;
+}
+
+#content {
+    clear:both;
+	padding:10px 35px 0 35px;
+}
+#content div {
+	margin:0;padding:0;height:1%;
+}
+#content img {
+	float:left;
+	padding-right:10px;
+	padding-bottom:8px;
+}
+#content {
+	background:none;
+}
+#content a {
+	border-bottom:1px dotted #008aca;
+    background:#fff;color:#1d1d1d;
+    text-decoration:none;
+}
+#content a:hover {
+	border-bottom:1px dotted #1d1d1d;
+}
+
+#map {background:#fff;color:#9bbde9;margin:0 15px;font-size:90%;padding:9px 0}
+#map a {color:#004763;background:#fff}
+#map ul {list-style:none}
+#map li {float:left}
+
+#footer {
+	background:url('/pub/i/footer_bg.gif') bottom no-repeat;
+	clear:both;
+	height:50px;
+	margin-top:30px;
+	padding:0 15px;
+	text-align:center;
+}
+#footer a {background:#fff;color:#ccc;text-decoration:none}
+#footer a:hover {background:#fff;color:#666}
+
+
+.clearer {
+	clear: both;
+	height: 0;
+}
+
+.clearer:after {
+	content: "\00A0";
+}
+
+.clearer_l {
+	clear: left;
+	height: 0;
+}
+
+.clearer_r:after {
+	content: "\00A0";
+}

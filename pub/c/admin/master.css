@@ -1,0 +1,31 @@
+/* LOAD EXTERNAL STYLES
+-----------------------*/
+@import url('/pub/c/admin/header.css');
+@import url('/pub/c/admin/navigation.css');
+@import url('/pub/c/admin/content.css');
+
+/* DEFAULT STYLES
+-----------------*/
+img {border:none;margin:0;padding:0;}
+
+/* CUSTOM STYLES
+-----------------*/
+
+html
+{
+	height:100%;
+}
+body
+{
+	background:#fff;color:#000;
+	font:13px/16px 'Lucida Grande', Arial, Verdana, Helvetica, sans;
+	margin:0;padding:0;
+}
+a
+{
+    cursor:pointer;
+}
+#subnav, #footer
+{
+	display:none;
+}
