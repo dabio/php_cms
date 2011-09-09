@@ -276,12 +276,15 @@ class Content extends Model
         // Zusammensetzen der neuen URL:
         if (empty($parent_url[0]['url']))
         {
-            // handelt es sich hier um das Root-Element?
-            $r = $this->find_lft_rgt($_['id']);
-
-            if ((int) $r[0]['lft']  == 1)
+            // Seite bereits vorhanden?
+            if (isset($_['id']))
             {
-                $_['url'] = '';
+                $r = $this->find_lft_rgt($_['id']);
+                // handelt es sich hier um das Root-Element?
+                if ((int) $r[0]['lft']  == 1)
+                {
+                    $_['url'] = '';
+                }
             }
             else
             {
